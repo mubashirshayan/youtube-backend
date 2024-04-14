@@ -11,8 +11,10 @@ db.once("open",()=>{
 
 const PORT=5001;
 app.get('/', (req, res) => {
+ 
     res.send('Hello World!')
   })
+
 app.use("/api/v1",router)
 app.listen(PORT,()=>{
     console.log(`server is running on PORT ${PORT}`)

@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+
 const register=(req,res)=>{
     try{
         console.log("register user")
@@ -10,7 +10,7 @@ const register=(req,res)=>{
 }
 const login=(req,res)=>{
     try{
-        console.log(req.body.user)
+        console.log("hellow login",req.body)
         return res.status(200).send("user login successfull")
     }catch{
         return res.status(200).send(" user not login")
