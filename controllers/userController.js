@@ -10,7 +10,7 @@ const register=(req,res)=>{
 }
 const login=(req,res)=>{
     try{
-        console.log("register user")
+        console.log(req.body.user)
         return res.status(200).send("user login successfull")
     }catch{
         return res.status(200).send("hello register user")
