@@ -4,4 +4,5 @@ import register from "../controllers/userController.js"
 const router=Router()
 console.log(router)
 router.route("/home").get(register);
+router.route("/login").post(login)
 export default router;
