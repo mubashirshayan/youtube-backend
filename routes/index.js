@@ -5,6 +5,6 @@ import {register,login} from "../controllers/userController.js"
 
 const router=Router()
 
-router.route("/home").get(register);
+router.route("/register").post(register);
 router.route("/login").post(login)
 export default router;
