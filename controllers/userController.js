@@ -1,7 +1,16 @@
 
 const register=(req,res)=>{
     try{
-        console.log("register user")
+      const  {userName,fullName,email,password,avatar,coverImage}=req.body
+         const userInformation={
+            userName:userName,
+            fullName:fullName,
+            email:email,
+            password:password,
+            avatar:avatar,
+            coverImage:coverImage,
+        }
+        console.log("register user",userInformation)
         return res.status(200).send("hello register user")
     }
     catch{
