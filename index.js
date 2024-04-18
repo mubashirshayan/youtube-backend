@@ -10,6 +10,7 @@ db.once("open",()=>{
 
 
 const PORT=5001;
+app.use(express.json())
 app.get('/', (req, res) => {
  
     res.send('Hello World!')
