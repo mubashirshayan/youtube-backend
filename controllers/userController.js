@@ -10,7 +10,7 @@ const register=(req,res)=>{
 }
 const login=(req,res)=>{
     try{
-        console.log("hellow login",req.body)
+        
         return res.status(200).send("user login successfull")
     }catch{
         return res.status(200).send(" user not login")
