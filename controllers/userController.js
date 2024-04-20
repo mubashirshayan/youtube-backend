@@ -12,7 +12,7 @@ const register=(req,res)=>{
             avatar:avatar,
             coverImage:coverImage,
         }
-        console.log("register user body",req.body)
+        //console.log("register user body",req.body)
         return res.status(200).send("hello register user",req.body)
     }
     catch{
