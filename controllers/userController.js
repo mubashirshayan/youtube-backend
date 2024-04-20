@@ -1,4 +1,6 @@
-
+import express from "express"
+const app=express();
+app.use(express.json())
 const register=(req,res)=>{
     try{
       const  {userName,fullName,email,password,avatar,coverImage}=req.body
@@ -10,8 +12,8 @@ const register=(req,res)=>{
             avatar:avatar,
             coverImage:coverImage,
         }
-        console.log("register user",userInformation,req.body)
-        return res.status(200).send("hello register user")
+        console.log("register user body",req.body)
+        return res.status(200).send("hello register user",req.body)
     }
     catch{
         return res.status(200).send("Not register user")
